@@ -1,4 +1,3 @@
-import React from "react";
 import { IoIosColorPalette } from "react-icons/io";
 
 import CustomInput from "../CustomInput";

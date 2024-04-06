@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { PropsWithChildren, useState } from "react";
 
 import CoordinatesTag from "../CoordinatesTag";
 import { DIRECTIIONS } from "../../constants/location";
@@ -10,7 +10,7 @@ import ResizeHandlersWrapper from "../shared/ResizeHandlerWrapper";
 import useDraggable from "../../hooks/useDraggable";
 import useResize from "../../hooks/useResize";
 
-const EditorBlock: React.FC<EditorBlockProps> = ({
+const EditorBlock: React.FC<PropsWithChildren<EditorBlockProps>> = ({
   width,
   height,
   top,

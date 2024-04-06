@@ -1,4 +1,4 @@
-import React from "react";
+import { PropsWithChildren } from "react";
 import styled from "styled-components";
 
 import ColorPicker from "../ColorPicker";
@@ -15,7 +15,7 @@ interface StyleEditorBlockProps extends EditorProps {
   initialImage?: string;
 }
 
-const StyleEditorBlock: React.FC<StyleEditorBlockProps> = ({
+const StyleEditorBlock: React.FC<PropsWithChildren<StyleEditorBlockProps>> = ({
   width,
   height,
   top,

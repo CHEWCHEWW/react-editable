@@ -1,4 +1,3 @@
-import React from "react";
 import { BsImages } from "react-icons/bs";
 
 import CustomInput from "../CustomInput";

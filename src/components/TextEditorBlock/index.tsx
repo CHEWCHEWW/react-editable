@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { BiText } from "react-icons/bi";
 import { GiMove } from "react-icons/gi";

@@ -1,4 +1,4 @@
-import React from "react";
+import { PropsWithChildren } from "react";
 import styled from "styled-components";
 
 import Icon from "../Icon";
@@ -11,7 +11,7 @@ interface CustomInputProps extends TypedCustomInputProps {
   accept?: string;
 }
 
-const CustomInput: React.FC<CustomInputProps> = ({
+const CustomInput: React.FC<PropsWithChildren<CustomInputProps>> = ({
   onChange,
   value,
   type,

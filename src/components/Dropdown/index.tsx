@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { BiChevronRight } from "react-icons/bi";
 

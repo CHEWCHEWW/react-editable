@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { AiOutlineAlignCenter, AiOutlineAlignLeft, AiOutlineAlignRight } from "react-icons/ai";
 import { FaBold, FaItalic, FaUnderline } from "react-icons/fa";

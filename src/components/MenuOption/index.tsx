@@ -1,11 +1,11 @@
-import React from "react";
+import { PropsWithChildren } from "react";
 import styled from "styled-components";
 
 interface MenuOptionProps {
   name: string;
 }
 
-const MenuOption: React.FC<MenuOptionProps> = ({
+const MenuOption: React.FC<PropsWithChildren<MenuOptionProps>> = ({
   name,
   children
 }): React.ReactElement => {
