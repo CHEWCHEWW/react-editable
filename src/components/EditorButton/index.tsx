@@ -1,4 +1,4 @@
-import React from "react";
+import { PropsWithChildren } from "react";
 
 import MenuButton from "../shared/MenuButton";
 
@@ -9,7 +9,7 @@ interface EditorButtonProps {
   onChange?: (ev: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-const EditorButton: React.FC<EditorButtonProps> = ({
+const EditorButton: React.FC<PropsWithChildren<EditorButtonProps>> = ({
   name,
   isShowing,
   value,

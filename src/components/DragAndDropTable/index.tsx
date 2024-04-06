@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import { Children, PropsWithChildren } from "react";
 import styled from "styled-components";
 
 import useDragAndDrop from "../../hooks/useDragAndDrop";
@@ -19,11 +19,11 @@ interface DragAndDropItemStyle extends DragAndDropTableStyle {
   height: number;
 }
 
-const DragAndDropTable: React.FC<DragAndDropTableProps> = ({
+const DragAndDropTable: React.FC<PropsWithChildren<DragAndDropTableProps>> = ({
   color,
   isVertical,
   children,
-}): React.ReactElement => {
+}) => {
   const {
     handleDragStart,
     handleDragOver,

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 
 import { SLIDER_MAX, SLIDER_MIN } from "../../constants/ui";

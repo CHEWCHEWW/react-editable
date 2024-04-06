@@ -20,9 +20,12 @@ const config: webpack.Configuration = {
           options: {
             presets: [
               "@babel/preset-env",
-              "@babel/preset-react",
               "@babel/preset-typescript",
+              ["@babel/preset-react", {
+                "runtime": "automatic"
+              }]
             ],
+          
             plugins: ["styled-components"]
           },
         },

@@ -1,4 +1,4 @@
-import React from "react";
+import { PropsWithChildren } from "react";
 import styled from "styled-components";
 
 interface EditableBoard {
@@ -10,7 +10,7 @@ interface EditableBoard {
   unit: string;
 }
 
-const EditableBoard: React.FC<EditableBoard> = ({
+const EditableBoard: React.FC<PropsWithChildren<EditableBoard>> = ({
   width,
   height,
   backgroundColor,

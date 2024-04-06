@@ -1,4 +1,4 @@
-import React from "react";
+import { PropsWithChildren } from "react";
 import styled from "styled-components";
 
 interface IconProps {
@@ -11,7 +11,7 @@ interface IconProps {
   onMouseUp?: () => void;
 }
 
-const Icon: React.FC<IconProps> = ({
+const Icon: React.FC<PropsWithChildren<IconProps>> = ({
   children,
   top,
   right,
